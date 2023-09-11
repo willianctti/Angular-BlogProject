@@ -1,7 +1,7 @@
 <div class="container__big-card">
     <div class="big-card__photo">
         <img 
-        src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
+        src="{{photoCover}}"
         alt="" 
         height="200px"
         width="100%"
@@ -11,12 +11,12 @@
 
     <a href="" target="_blank">
         <div class="big-card__title">
-            <h1>Saiu a nova versão do Angular </h1>
+            <h1><a [routerLink]="['content', Id]"></a>{{cardTitle}}</h1>
         </div>
     
         <div class="big-card__description">
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore accusantium molestias itaque quasi incidunt vitae hic nobis temporibus quo saepe eligendi inventore, consequuntur molestiae magni! Cum suscipit optio inventore officiis.
+                {{cardDescription}}
             </p>
         </div>
     </a>
